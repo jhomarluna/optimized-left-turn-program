@@ -5,7 +5,7 @@
 This project simulates a traffic light system using an Arduino and an ultrasonic distance sensor.
 The ultrasonic sensor detects when an object (e.g., a car) is too close, and the lights respond in real time — overriding the normal cycle for safety.
 
-
+##
 
 **✨ Features**
 
@@ -19,6 +19,7 @@ Built with non-blocking logic (millis() instead of delay()), so the lights and s
 
 Code is modular and easy to extend for more advanced traffic control (e.g., optimized left turn, timed extensions).
 
+##
 
 **🛠️ Components**
 
@@ -30,6 +31,7 @@ Ultrasonic sensor (HC-SR04)
 
 Breadboard + jumper wires
 
+##
 
 **🔌 Circuit Setup**
 
@@ -51,6 +53,7 @@ VCC → 5V
 
 GND → GND
 
+##
 
 **📂 Code Overview**
 
@@ -60,7 +63,9 @@ readDistanceCm() → triggers ultrasonic sensor and calculates distance.
 
 loop() → 
 Checks the sensor every 60 ms.
-
 Forces RED if a car is detected.
-
 Otherwise cycles through the normal light sequence.
+
+##
+
+![Circuit Diagram](images/circuit.png)
